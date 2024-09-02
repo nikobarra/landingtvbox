@@ -76,12 +76,21 @@ body {
     border-radius: 10px;
 }
 
-.video-container {
+/* .video-container {
     width: 100%;
     max-width: 430px;
     height: auto;
     padding: 10px;
     margin: 0 auto;
+} */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000; /* Añade un fondo negro mientras carga el video */
 }
 
 footer {
@@ -136,5 +145,8 @@ footer a:active {
     .image-container img {
         max-width: 100%;
         margin: 0 auto;
+    }
+    .video-container {
+        padding-bottom: 75%; /* Ajusta la altura del video en pantallas pequeñas */
     }
 }
