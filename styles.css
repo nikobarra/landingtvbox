@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center; /* Centra el texto en toda la página */
+}
+
+.header,
+.section,
+.footer-content {
+    padding: 20px;
+    margin: 0 auto; /* Centra el contenido */
+    max-width: 1200px; /* Limita el ancho máximo */
+    width: 100%;
+}
+
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen no se recorte */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las imágenes en la pantalla */
+    gap: 10px; /* Añade espacio entre imágenes */
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-container {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white; /* Color del enlace en su estado normal */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+footer a:visited {
+    color: white; /* Mantiene el color blanco después de que el enlace ha sido visitado */
+}
+
+footer a:hover {
+    color: #ff9800; /* Cambia el color del enlace cuando se pasa el ratón por encima (hover) */
+}
+
+footer a:active {
+    color: #ff9800; /* Cambia el color cuando el enlace está activo */
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .image-container img {
+        max-width: 90%;
+        margin: 0 auto; /* Asegura que las imágenes estén centradas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 0.9em;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
